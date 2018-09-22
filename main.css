@@ -1,0 +1,103 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+html,
+body {
+    min-height: 100%;
+    background-color: #3B3F45;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    border: 10px solid white;
+}
+
+.ba-head {
+    background-color: #494F56;
+    color: #F96F70;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ba-h1 {
+    margin: 0;
+    padding: 10px 0 10px;
+}
+
+.ba-p1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.ba-small {
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.ba-small::before {
+    content: "(";
+}
+
+.ba-small::after {
+    content: ")";
+}
+
+.ba-foot {
+    display: block;
+    background-color: #494F56;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    color: #F96F70;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.ba-cont {
+    max-width: 800px;
+    margin: 0 auto;
+    padding:30px 0 30px 0;
+    list-style-type: none;
+    display: block;
+    color: #EAF5F9;
+    font-size: 20px;
+}
+
+.ba-checked {
+    display: block;
+    cursor: pointer;
+    padding: 15px 10px;   
+}
+
+.ba-li {
+    background-color: #8B809F;
+}
+
+.ba-li:nth-child(odd) {
+    background-color: #7D7294;
+}
+
+.ba-li:hover {
+    background-color: #645B78;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.ba-li:active {
+    background-color: red;
+}
+
+.ba-cont [type="checkbox"]:checked+span {
+    text-decoration:line-through;
+}
+
